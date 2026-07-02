@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Remote Sensing AI Platform</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo-section">
+
+                <img
+                    src="images/suparco.jpeg"
+                    alt="SUPARCO Logo"
+                    class="logo">
+
+                <div>
+
+                    <h2>SUPARCO</h2>
+
+                    <p>Remote Sensing AI Platform</p>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- Background Image via CSS -->
+    <!-- ========================= -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>
+
+                AI Powered Remote Sensing Image Analysis
+
+            </h1>
+
+            <p>
+
+                Enhance satellite and aerial imagery using Computer Vision
+                and interact naturally with Vision Language Models.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- MAIN BACKGROUND VIDEO -->
+    <!-- ========================= -->
+
+    <section class="main-wrapper">
+
+        <!-- Background Video -->
+
+        <video
+            class="background-video"
+            autoplay
+            muted
+            loop
+            playsinline>
+
+            <source
+                src="images/space1.mp4"
+                type="video/mp4">
+
+        </video>
+
+        <div class="video-overlay"></div>
+
+
+        <!-- ========================= -->
+        <!-- MAIN CONTENT -->
+        <!-- ========================= -->
+
+        <main class="container">
+
+            <!-- Upload -->
+
+            <section class="card">
+
+                <h2>Upload Image</h2>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*">
+
+                <button id="uploadBtn">
+
+                    Upload Image
+
+                </button>
+
+            </section>
+
+
+            <!-- Status -->
+
+            <section class="card">
+
+                <h2>Status</h2>
+
+                <div id="status">
+
+                    Waiting for image upload...
+
+                </div>
+
+            </section>
+
+
+            <!-- Images -->
+
+            <section class="image-grid">
+
+                <!-- Original -->
+
+                <div class="card">
+
+                    <h2>Original Image</h2>
+
+                    <img
+                        id="originalImage"
+                        src=""
+                        alt="Original Image">
+
+                </div>
+
+
+                <!-- Processed -->
+
+                <div class="card image-card">
+
+                    <div class="card-header">
+
+                        <h2>Processed Image</h2>
+
+                        <button
+                            id="downloadBtn"
+                            title="Download Processed Image">
+
+                            <img
+                                src="icons/download.jpg"
+                                alt="Download">
+
+                        </button>
+
+                    </div>
+
+                    <img
+                        id="processedImage"
+                        src=""
+                        alt="Processed Image">
+
+                </div>
+
+            </section>
+
+
+            <!-- Processing -->
+
+            <section class="card">
+
+                <h2>Image Processing</h2>
+
+                <div class="button-grid">
+
+                    <button id="enhanceBtn">
+
+                        Enhance
+
+                    </button>
+
+                    <button id="denoiseBtn">
+
+                        Denoise
+
+                    </button>
+
+                    <button id="sharpenBtn">
+
+                        Sharpen
+
+                    </button>
+
+                    <button id="deblurBtn">
+
+                        Deblur
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- VQA -->
+
+            <section class="card">
+
+                <h2>Visual Question Answering</h2>
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Ask anything about the uploaded image...">
+
+                <button id="askBtn">
+
+                    Ask AI
+
+                </button>
+
+            </section>
+
+
+            <!-- AI Response -->
+
+            <section class="card">
+
+                <h2>AI Response</h2>
+
+                <div id="answer"></div>
+
+            </section>
+
+        </main>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <p>
+
+            Remote Sensing AI Platform
+
+        </p>
+
+        <p>
+
+            SUPARCO Internship 2026
+
+        </p>
+
+        <p>
+
+            Computer Vision • Image Processing • Vision Language Models
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
